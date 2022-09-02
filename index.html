@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+    <div id="map" class="article"></div>
+    <div id="info" class="article">
+      <div>
+        <fieldset style="margin: 30px">
+          <legend>Coordenadas:</legend>
+          <label>Latitude:</label>
+          <input type="text" id="input_lat" style="width: 50%" value="-15.816939120824099"><br><br>
+          <label>Longitude:</label>
+          <input type="text" id="input_lng" style="width: 50%" value="-47.65462957443816"><br><br>
+          <br><br>
+          <button type="button" id="btn_lat_lng">buscar</button>
+        </fieldset>
+        <div id="uh_codigo_view"></div>
+        <div id="latlng"></div>
+      </div>
+      <div>
+        <fieldset>
+          <legend>Camadas:</legend>
+          <form>
+            <input type="checkbox" id="check_uhs" name="check_uhs">
+            <label for="check_uhs"> Unidades Hidrográficas </label><br>
+            <input type="checkbox" id="check_bacias" name="check_bacias">
+            <label for="check_bacias"> Bacias Hidrográficas </label>
+          </form>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+
+  <!-- index.js -->
+  <script type="module" src="./js/index.js"></script>
+  <!-- gmaps api -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmR6FbWntL4uDpIFaN9o0CoZgVV9qQPns&callback=initMap&v=weekly&libraries=geometry"
+    defer></script>
+</body>
+
+</html>
