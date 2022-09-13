@@ -1,3 +1,10 @@
--15.7217175,-48.0774443
--15.6096185,-47.7566369
--15.9609896,-47.6703156
+# JS - MVC - Drainage 
+Criando um site no modelo MVC.
+
+13/09/22 <br>
+Utilizando a biblioteca [tiny slider](https://github.com/ganlanyuan/tiny-slider) para criar um carrousel com as outorgas e fiscalizações dentro de um polígono:
+
+- Outorgas na Unidade Hidrográfica;
+- Outorgas na Seção (Área de Drenagem);
+- Pontos fiscalizados na Unidade Hidrográfica;
+- Pontos fiscalizados na Seção (Área de Drenagem);
