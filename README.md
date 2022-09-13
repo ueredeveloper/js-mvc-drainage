@@ -8,3 +8,6 @@ Utilizando a biblioteca [tiny slider](https://github.com/ganlanyuan/tiny-slider)
 - Outorgas na Seção (Área de Drenagem);
 - Pontos fiscalizados na Unidade Hidrográfica;
 - Pontos fiscalizados na Seção (Área de Drenagem);
+
+Criando uma classe com o nome Tabela para unificar a forma de mostrar as tabelas na tela.
+

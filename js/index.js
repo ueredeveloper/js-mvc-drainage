@@ -4,7 +4,8 @@ import { DrenagensModel } from './models/drenagens.js';
 import { UnidadesHidrograficasController } from './controllers/unidades-hidrograficas.js';
 import { UnidadesHidrograficasModel } from './models/unidades-hidrograficas.js';
 import { UnidadesHidrograficasView } from './views/unidades-hidrograficas.js';
-import {  createTBody, atualizeTBody  } from './views/elements.js'
+import {  createTBody, atualizeTBody  } from './views/elements.js';
+import {Tabela} from './views/tabela.js';
 
 
 let slider = tns({
@@ -239,7 +240,9 @@ let outorgas = [
   },
 ];
 
-let tbody = createTBody('out_secao');
+let tabela = new Tabela('out_secao');
+tabela.atualizeTBody(outorgas);
+//let tbody = createTBody('out_secao');
 //atualizeTBody(tbody, outorgas);
 
 let UnidadesHidrograficas = new UnidadesHidrograficasModel();
