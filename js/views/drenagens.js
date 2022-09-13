@@ -1,5 +1,5 @@
 import { elements } from './elements.js';
-import {map} from './map.js';
+import { map } from './map.js';
 /**
  * Ouvite das modificações dos inputs de coordenadas na tela.
  * 
@@ -25,13 +25,13 @@ class DrenagensView {
       event.preventDefault();
       handler(this.input_lat.value, this.input_lng.value)
     })
-    
+
   }
-  async mostrarDrenagens (features) {
+  async mostrarDrenagens(features) {
     let _features = await features;
-    this.polylines.forEach(p=>{p.setMap(null)});
+    this.polylines.forEach(p => { p.setMap(null) });
     this.polylines = [];
-    
+
     _features.forEach(f => {
       this.polylines.push(
         new google.maps.Polyline({
